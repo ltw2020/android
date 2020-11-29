@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/HomeWork"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HomeWork"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/tittle_background"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/denglu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="30dp"
+        android:paddingTop="50dp"
+        android:text="登录"
+        android:textColor="#17246A"
+        app:layout_constraintTop_toBottomOf="@id/HomeWork"
+        android:textSize="30dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/nihao"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="120dp"
+        android:paddingTop="20dp"
+        android:text="您好，欢迎来到知乎日报！"
+        android:textSize="20dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edt"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:background="@drawable/zhanghao_background"
+        android:hint="请输入账号"
+        android:drawableLeft="@drawable/yh"
+        android:drawablePadding="15dp"
+        android:textColorHint="#87C4DF"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:paddingStart="15dp"
+        app:layout_constraintTop_toBottomOf="@id/nihao"
+        app:layout_constraintStart_toStartOf="@id/nihao"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/edt2"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:background="@drawable/zhanghao_background"
+        android:hint="请输入密码"
+        android:drawableLeft="@drawable/mm"
+        android:drawablePadding="15dp"
+        android:maxLength="8"
+        android:inputType="textPassword"
+        android:textColorHint="#87C4DF"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/edt"
+        app:layout_constraintStart_toStartOf="@id/edt"
+        android:paddingStart="15dp"
+        android:layout_marginTop="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="同意用户协议"
+        android:textColor="#132068"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/edt2"
+        app:layout_constraintTop_toBottomOf="@id/edt2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="登录"
+        android:textSize="20dp"
+        android:background="@drawable/button_background"
+        app:layout_constraintTop_toBottomOf="@id/edt2"
+        app:layout_constraintStart_toStartOf="@id/edt2"
+        android:layout_marginStart="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/zhu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/button"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="没有账号？立即注册"
+        android:textSize="10dp"/>
+
+    <ImageView
+        android:id="@+id/xl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/wb"
+        app:layout_constraintBottom_toTopOf="@id/xinlang"
+        app:layout_constraintStart_toStartOf="@+id/xinlang"
+        android:layout_marginStart="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/tx"
+        app:layout_constraintBottom_toTopOf="@id/tengxun"
+        app:layout_constraintStart_toStartOf="@+id/tengxun"
+        android:layout_marginStart="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/xinlang"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:text="新浪微博登录"
+        android:textSize="15dp"
+        android:textColor="#121F67"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="80dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tengxun"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:text="腾讯微博登录"
+        android:textSize="15dp"
+        android:textColor="#121F67"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="240dp"
+        tools:ignore="MissingConstraints" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
